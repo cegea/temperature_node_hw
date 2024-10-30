@@ -4883,6 +4883,17 @@
 		)
 		(uuid "0537454e-bbe8-465f-8b7b-a83dee5a9f3e")
 	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 189.484 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+		)
+		(uuid "2e77d4a0-3f77-44d3-b83b-3e2017abbe34")
+	)
 	(text "POWER SUPPLY"
 		(exclude_from_sim no)
 		(at 152.146 117.348 0)
