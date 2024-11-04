@@ -5234,6 +5234,17 @@
 		)
 		(uuid "2d0aa1eb-846a-43b3-807a-ecf37d444687")
 	)
+	(label "TX"
+		(at 245.11 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f0273e5-e722-40bb-bfa7-6cb6f977b98c")
+	)
 	(label "LED_DI"
 		(at 160.02 46.99 0)
 		(fields_autoplaced yes)
@@ -5255,6 +5266,17 @@
 			(justify left bottom)
 		)
 		(uuid "5c3583d5-4ea7-4e4d-9f8b-f54e6971a44d")
+	)
+	(label "RX"
+		(at 245.11 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89d066df-baa5-4b6f-81a5-830bbec10e7f")
 	)
 	(label "CHG_STAT"
 		(at 205.74 81.28 0)
