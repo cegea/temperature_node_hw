@@ -1956,7 +1956,10 @@
 				)
 			)
 		)
-		(symbol "LED:APA102"
+		(symbol "LED:WS2812B-2020"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1969,7 +1972,7 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "APA102"
+			(property "Value" "WS2812B-2020"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
@@ -1978,7 +1981,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_RGB_5050-6"
+			(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -1988,7 +1991,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -1998,7 +2001,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RGB LED with integrated controller"
+			(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2007,7 +2010,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale"
+			(property "ki_keywords" "RGB LED NeoPixel Nano addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2016,7 +2019,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*RGB*5050*"
+			(property "ki_fp_filters" "LED*WS2812*-2020_PLCC4*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2025,7 +2028,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "APA102_0_0"
+			(symbol "WS2812B-2020_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -2035,7 +2038,7 @@
 					)
 				)
 			)
-			(symbol "APA102_0_1"
+			(symbol "WS2812B-2020_0_1"
 				(polyline
 					(pts
 						(xy 1.27 -3.556) (xy 1.778 -3.556)
@@ -2132,11 +2135,11 @@
 					)
 				)
 			)
-			(symbol "APA102_1_1"
-				(pin input line
-					(at -7.62 2.54 0)
+			(symbol "WS2812B-2020_1_1"
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "DI"
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2151,10 +2154,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 0 0)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "CI"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2169,10 +2172,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin input line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "DIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2190,7 +2193,7 @@
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 2.54)
-					(name "VCC"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2198,42 +2201,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "CO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "DO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3608,16 +3575,16 @@
 		(uuid "3d7754a6-a640-4560-a56e-355a6e536eba")
 	)
 	(no_connect
-		(at 181.61 46.99)
-		(uuid "49b8f4ab-fdaf-4331-8950-4e6445f3529d")
-	)
-	(no_connect
 		(at 123.19 80.01)
 		(uuid "7f715365-a7de-4ef9-825d-c0798b1f7133")
 	)
 	(no_connect
 		(at 181.61 49.53)
-		(uuid "84e54a7a-f66c-4db7-b985-3f4616dea1fe")
+		(uuid "c3736ca1-dcd0-4c5d-8bd7-f59521c255b4")
+	)
+	(no_connect
+		(at 205.74 68.58)
+		(uuid "ec38923f-3d7b-4300-99c2-9a2dc70896e4")
 	)
 	(no_connect
 		(at 205.74 73.66)
@@ -4205,16 +4172,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 49.53) (xy 166.37 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6336ef-903b-46b9-8a0a-2941617b79cb")
-	)
-	(wire
-		(pts
 			(xy 229.87 93.98) (xy 229.87 91.44)
 		)
 		(stroke
@@ -4545,7 +4502,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 46.99) (xy 166.37 46.99)
+			(xy 160.02 49.53) (xy 166.37 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5246,7 +5203,7 @@
 		(uuid "2f0273e5-e722-40bb-bfa7-6cb6f977b98c")
 	)
 	(label "LED_DI"
-		(at 160.02 46.99 0)
+		(at 160.02 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5322,7 +5279,7 @@
 		)
 		(uuid "aea60a7a-1335-4d89-9cbc-89161289b2ac")
 	)
-	(label "LED_CI"
+	(label "GPIO5"
 		(at 205.74 68.58 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5365,17 +5322,6 @@
 			(justify left bottom)
 		)
 		(uuid "d8ef0d6a-733c-4121-8ab8-18cfdd8c50a2")
-	)
-	(label "LED_CI"
-		(at 160.02 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9e0da2f-e98d-4a50-9ada-98e8719b0450")
 	)
 	(label "SCL"
 		(at 205.74 55.88 0)
@@ -5886,6 +5832,81 @@
 			(project "temperature_node"
 				(path "/b4f604dd-c1be-4776-9f83-5b1c508883b1"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B-2020")
+		(at 173.99 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "389ee689-2899-4feb-87b7-fa2fcb7b66ee")
+		(property "Reference" "D3"
+			(at 176.53 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B-2020"
+			(at 182.372 57.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 175.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+			(at 176.53 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 173.99 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2df3fe3e-5af7-4c49-a651-c7fa838aa997")
+		)
+		(pin "4"
+			(uuid "46f6686a-d23f-412c-b0c8-a98146e1d916")
+		)
+		(pin "2"
+			(uuid "e7475220-15bb-4e2e-8be0-7a1e5553a4dc")
+		)
+		(pin "3"
+			(uuid "c125f424-81bf-45be-abb8-22538d87fef7")
+		)
+		(instances
+			(project ""
+				(path "/b4f604dd-c1be-4776-9f83-5b1c508883b1"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8633,90 +8654,6 @@
 			(project "temperature_node"
 				(path "/b4f604dd-c1be-4776-9f83-5b1c508883b1"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:APA102")
-		(at 173.99 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b115eac3-fdef-4dec-a3c2-0a60c7a55871")
-		(property "Reference" "D2"
-			(at 176.1841 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "APA102"
-			(at 176.1841 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
-			(at 175.26 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf"
-			(at 176.53 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 173.99 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a8a2ee33-d45f-46e6-80fc-66e9af300cc1")
-		)
-		(pin "2"
-			(uuid "b326df1c-33e1-48ef-8a3f-97c42636f3f4")
-		)
-		(pin "4"
-			(uuid "e8afd859-a458-4339-b93d-3f0147a8cd62")
-		)
-		(pin "5"
-			(uuid "3ee1baec-a0db-47f1-bac3-591085db66db")
-		)
-		(pin "6"
-			(uuid "b4007aaf-564e-455b-b1d3-7b818b070b0c")
-		)
-		(pin "3"
-			(uuid "efe179db-6e57-4f41-a181-61e8d90c5ffb")
-		)
-		(instances
-			(project ""
-				(path "/b4f604dd-c1be-4776-9f83-5b1c508883b1"
-					(reference "D2")
 					(unit 1)
 				)
 			)
