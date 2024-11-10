@@ -5498,6 +5498,17 @@
 		)
 		(uuid "3ccba985-8d16-43c2-9090-ddbd73b5c604")
 	)
+	(label "D_P"
+		(at 123.19 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41665698-a1a7-45b4-adfd-376ef98c8c29")
+	)
 	(label "D+"
 		(at 139.7 74.93 0)
 		(fields_autoplaced yes)
@@ -5574,6 +5585,17 @@
 			(justify left bottom)
 		)
 		(uuid "b112c919-f5c2-4928-8ed9-807f596009aa")
+	)
+	(label "D_N"
+		(at 123.19 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c247b2a2-c289-49c4-b82d-bcd3969d1dd7")
 	)
 	(label "SHT_EN"
 		(at 63.5 50.8 0)
