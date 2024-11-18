@@ -5008,6 +5008,17 @@
 		)
 		(uuid "8ee9dd12-0658-4127-ba52-1ad91fab7d0f")
 	)
+	(text "Batt 3V7 450 mAh\n31 x 25 x 6 mm"
+		(exclude_from_sim no)
+		(at 162.56 144.272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://powercells.de/lipo-450mah-3-7v-akku-battery-3-6v-akku-jst-ph-2-0-lithium-ion-polymer-426.html")
+		)
+		(uuid "a21dae79-b1ea-4814-a000-a348fb1618bd")
+	)
 	(text "ESP32-C3"
 		(exclude_from_sim no)
 		(at 231.902 29.972 0)
@@ -5700,7 +5711,7 @@
 				)
 			)
 		)
-		(property "Value" "S2B-PH-K-S"
+		(property "Value" "S2B-PH-SM4-TB"
 			(at 160.02 133.35 0)
 			(effects
 				(font
